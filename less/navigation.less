@@ -1,5 +1,51 @@
 // Navigation code here
-.header {
-	border: 1px solid purple;
+.main-nav {
+    border: 1px solid purple;
+    margin: 20px;
+    background: @nav-bg;
+    border-bottom: @nav-border;
+    width: 100%;
+
+
 }
-    // nav
+
+.nav-bar {
+    border: 1px solid green;
+    .center;
+    width: 100%;
+
+
+    .top-bar {
+        border: 1px solid red;
+        .center;
+        margin-top: 1.2rem;
+        font-size: 3.2rem;
+        color: @header-font-color;
+
+        width: 100%;
+    }
+
+    .bottom-bar {
+        border: 1px solid blue;
+        .center;
+        justify-content: space-around;
+        width: 100%;
+
+        nav {
+            flex-wrap: nowrap;
+
+            a {
+                font-size: 1.3rem;
+                text-decoration: none;
+                padding: 1rem 1%;
+                color: @header-font-color;
+                justify-content: space-around;
+            }
+        }
+
+    }
+}
+
+
+
+// nav

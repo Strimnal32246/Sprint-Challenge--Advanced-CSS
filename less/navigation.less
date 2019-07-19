@@ -1,1 +1,30 @@
 // Navigation code here
+.top-nav {
+    .layout;
+    flex-direction: column;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid @nav-border;
+    background: @nav-bg;
+    width: 100%;
+    margin: 0 auto;
+
+
+    .logo {
+        font-size: 4rem;
+    }
+
+
+    nav {
+        .layout(space-around);
+        width: 32%;
+        padding-top: 20px;
+
+
+        @media @phone {
+            width: 80%;
+            transition: 0.25s;
+        }
+    }
+}
+
+// nav

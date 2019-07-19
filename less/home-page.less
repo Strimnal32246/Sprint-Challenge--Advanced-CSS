@@ -12,76 +12,116 @@
         }
 
     }
+}
 
-    .space-images {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+.space-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 
-        img {
-            width: 28%;
-            margin: 20px 2.5%;
-            border-radius: 20px;
-            height: 100%;
+    .img {
+        width: 28%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+    }
 
-            .sky, .launch{
-
-           
-             @media @phone {
-
-                    display: none;
-                }
-            }
-        
-        }
-   }
-
-    .visit-planets {
-        padding: 15px;
-
-        h3 {
-            margin-top: 11px;
-        }
-
-        p {
-            margin-top: 13px;
+    .blast {
+        @media @phone {
+            width: 90%;
+            margin: 20px auto;
         }
     }
 
-    .walk {
-        margin-top: 60px;
-        border-top: 1px solid @main-border-color;
-        padding: 50px 60px;
-        display: flex;
-        justify-content: center;
-
-        .walk-text {
-            width: 50%;
-
-            h3 {
-                margin-bottom: 10px;
-            }
-
-            p {
-                margin-bottom: 26px;
-            }
-
-            .btn {
-                .button-creator(@width, @height, @btn-color, @btn-font, @font-size)
-            }
+    .sky {
+        @media @phone {
+            display: none;
         }
+    }
 
-        .walk-img {
-            width: 46%;
-            margin-left: 4%;
-
-            img {
-                width: 100%;
-                height: auto;
-                border-radius: 10px;
-            }
+    .launch {
+        @media @phone {
+            display: none;
         }
     }
 }
+
+
+
+.visit-planets {
+    padding: 15px;
+
+    h3 {
+        margin-top: 11px;
+    }
+
+    p {
+        margin-top: 13px;
+    }
+}
+
+.walk {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+
+    .walk-text {
+        width: 50%;
+    }
+
+    .walk.text {
+        @media @phone {
+            width: 90%;
+            order: 0;
+        }
+    }
+
+
+    h3 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 26px;
+    }
+
+    .btn {
+        .button-creator(@width, @height, @btn-color, @btn-font, @font-size);
+
+
+        @media @phone {
+            width: 100%;
+            height: 60px;
+        }
+
+    }
+
+
+
+    .walk-img {
+        width: 46%;
+        margin-left: 4%;
+
+
+        @media @phone {
+            width: 90%;
+            order: -1;
+            margin: 20px auto;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+
+
+
 
 // home

@@ -1,6 +1,6 @@
 // Navigation code here
 .main-nav {
-    border: 1px solid purple;
+    border: 2px green;
     margin: 30px;
     .center;
     background: @nav-bg;
@@ -11,43 +11,52 @@
 }
 
 .nav-bar {
-    border: 1px solid green;
+    border: 2px purple;
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-content:center;
+    .center;
 
 
     .top-bar {
-        border: 1px solid red;
+        border: 2px blue;
         margin-top: 1.2rem;
         font-size: 3.2rem;
-align-content:center;
+        .center;
         color: @header-font-color;
-
         width: 100%;
     }
 
+    .nav-bar .top-bar {
+        h1 {
+            .center;
+        }
+    }
+
     .bottom-bar {
-        border: 1px solid blue;
+        border: 2px pink;
         display: flex;
         justify-content: space-between;
-        align-content: center;
         width: 100%;
+        .center;
 
         nav {
-            display:flex;
+            display: flex;
             justify-content: space-between;
-            align-content:center;
 
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                text-decoration: underline;
+
+            }
 
             a {
                 font-size: 1.3rem;
                 text-decoration: none;
                 padding: 1rem 1%;
                 color: @header-font-color;
-                justify-content: space-between;
-                align-content:center;
+                justify-content: space-around;
             }
         }
 

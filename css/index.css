@@ -208,8 +208,6 @@ p {
 @media (max-width: 500px) {
   .nav-bar .bottom-bar nav {
     display: flex;
-    flex-direction: column;
-    text-decoration: underline;
   }
 }
 .nav-bar .bottom-bar nav a {
@@ -282,8 +280,8 @@ footer {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .walk .walk.text {
-    width: 90%;
+  .walk .walk-text {
+    width: 70%;
     order: 0;
   }
 }
@@ -319,7 +317,7 @@ footer {
 @media (max-width: 500px) {
   .walk .btn {
     width: 100%;
-    height: 60px;
+    height: 80px;
   }
 }
 .walk .walk-img {
@@ -328,12 +326,12 @@ footer {
 }
 @media (max-width: 500px) {
   .walk .walk-img {
-    width: 90%;
-    order: -1;
+    width: 50%;
     margin: 20px auto;
+    order: 2;
   }
 }
-.walk img {
+.walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;

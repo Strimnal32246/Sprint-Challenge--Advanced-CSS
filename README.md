@@ -33,14 +33,16 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
-
+An adaptive website creates multiple versions of the page to fit a users device, whereas a fully responsive website adapts to different screen sizes with the use of media querie
 2. Describe what it means to be mobile first vs desktop first.
+mobile first is using min width media queries for other devices. Whereas desktop first would be to develop the website with the main css being used for the desktop design and using max width media queries for other devices.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-
+It makes it so that 1rem=10px. it allows math to be easier for you when coding
 4. How would you describe preprocessing to someone new to CSS?
+Preprocessing allows you to write cleaner css with added features and functionality to help make things easier for you and then turns what you write into normal css.
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? I love the mixins where you can save them and use them. The trouble I am having is the mobile media or my button  not working sometimes.
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -56,19 +58,19 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
 * [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
 * [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [ ] Once in your project's root folder, run the following command ``less-watch-compiler less css index.less
 * [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
 * [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
@@ -90,7 +92,7 @@ Your finished project must include all of the following requirements:
 7.home-page.less
 ```
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._
 
 ### Home Page - Desktop HTML & LESS
 
